@@ -4,7 +4,7 @@
 
 void main() {
   #pragma omp parallel for schedule(dynamic)
-	for(int i=0; i<15; i++) {
-		printf("[%d] Print from thread %d\n", i, i);
-	}
+  for(int i=0; i<15; i++) {
+    printf("[%d] Print from thread %d\n", i, i);
+  }
 }
