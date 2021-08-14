@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
     return 1;
   }
   
-	#pragma omp parallel for schedule(dynamic)
+	#pragma omp parallel for schedule(guided)
 	for(int i=0; i<num_loops; i++) {
 		printf("[%d] Print from thread %d\n", i, i);
 	}
